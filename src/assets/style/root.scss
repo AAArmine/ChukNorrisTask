@@ -36,6 +36,8 @@
 :root {
   --main: #f15a24;
   --secondary: #29abe2;
+  --secondary: #29abe2;
+  --dark: #5c5d60;
   --white: #eeeeee;
 }
 * {
@@ -46,7 +48,7 @@
 }
 
 body {
-  color: var(--grey4);
+  color: var(--dark);
   // ul {
   //   list-style-type: none;
   // }
