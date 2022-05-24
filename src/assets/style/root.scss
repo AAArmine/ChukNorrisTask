@@ -1,0 +1,73 @@
+@import "./breakpoints/breakpoints.scss";
+
+@font-face {
+  font-family: roboto;
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url("./fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: roboto-light;
+  src: url("./fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: roboto-italic;
+  src: url("./fonts/Roboto/Roboto-Italic.ttf");
+}
+@mixin vhAlignCenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin gridDisplay($columns) {
+  display: grid;
+  grid-template-columns: $columns;
+}
+:root {
+  --main: #f15a24;
+  --secondary: #29abe2;
+  --white: #eeeeee;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  color: var(--grey4);
+  // ul {
+  //   list-style-type: none;
+  // }
+  // textarea:hover,
+  // input:hover,
+  // textarea:active,
+  // input:active,
+  // textarea:focus,
+  // input:focus,
+  // button:focus,
+  // button:active,
+  // button:hover,
+  // label:focus {
+  //   outline: 0px;
+  //   -webkit-appearance: none;
+  //   box-shadow: none;
+  // }
+  a {
+    text-decoration: none;
+  }
+  .w-100 {
+    width: 100%;
+  }
+}
