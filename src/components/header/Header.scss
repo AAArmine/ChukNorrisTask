@@ -7,9 +7,10 @@
 }
 .header-sec {
   background-color: black;
-  padding: 2rem;
+  padding: 1.5rem;
   @include flexCenter("row");
   .logo-container {
+    cursor: pointer;
     img {
       max-width: 12rem;
       &:hover {

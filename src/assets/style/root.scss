@@ -38,6 +38,8 @@
   --secondary: #29abe2;
   --secondary: #29abe2;
   --dark: #5c5d60;
+  --bgDark: rgb(44, 18, 18);
+  --bg: #f9dec642;
   --white: #eeeeee;
 }
 * {
@@ -48,7 +50,7 @@
 }
 
 body {
-  color: var(--dark);
+  // color: var(--dark);
   // ul {
   //   list-style-type: none;
   // }
@@ -71,5 +73,11 @@ body {
   }
   .w-100 {
     width: 100%;
+  }
+  .mt-2 {
+    margin-top: 2rem;
+  }
+  .mt-1 {
+    margin-top: 1rem;
   }
 }
