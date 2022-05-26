@@ -72,10 +72,7 @@ export const Home = () => {
               ) : (
                 ""
               )}
-              <MainButton
-                text="Get a single random joke"
-                handleClick={getASingleJoke}
-              />
+              <MainButton text="Get a joke" handleClick={getASingleJoke} />
             </div>
             <div className="mt-2">
               {loadingStartJoke === "success" ? (
@@ -94,7 +91,7 @@ export const Home = () => {
               </div>
               {!startTimer ? (
                 <MainButton
-                  text="START getting a random joke every 3"
+                  text="START (get every 3sec)"
                   handleClick={() => setStartTimer(true)}
                 />
               ) : (

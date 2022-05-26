@@ -4,7 +4,10 @@ import "../Home.scss";
 import chuckNorris from "../../../assets/images/chuckNorris.gif";
 import { CustomButton } from "../../../components/buttons/customButton/CustomButton";
 
-export const GetRandomJoke = ({ randomData, handleClick }) => {
+export const GetRandomJoke = ({ randomData }) => {
+  const clickFunction=()=>{
+    console.log("This text; ", randomData.value );
+  }
   return (
     <div className="joke-container">
       <BsChatQuote size="2em" color="#f15a24" />
@@ -15,7 +18,7 @@ export const GetRandomJoke = ({ randomData, handleClick }) => {
         <div className="gif-cont">
           <img src={chuckNorris} alt="Chuck Norris" />
         </div>
-        <CustomButton text="Add the joke to the favorites" />
+        <CustomButton text="Add the joke to the favorites" clickFunction={clickFunction}/>
       </div>
     </div>
   );

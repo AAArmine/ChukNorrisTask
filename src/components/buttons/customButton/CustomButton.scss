@@ -21,6 +21,12 @@
     box-shadow: none;
     border: 1px solid var(--bg);
   }
+  &:hover .button-light {
+    top: 10px;
+    left: 8px;
+    width: 16px;
+    height: 7px;
+  }
   .button-light {
     position: absolute;
     width: 18px;
