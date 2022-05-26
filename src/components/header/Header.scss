@@ -8,6 +8,7 @@
 .header-sec {
   background-color: black;
   padding: 1.5rem;
+  min-height: 20vh;
   @include flexCenter("row");
   .logo-container {
     cursor: pointer;

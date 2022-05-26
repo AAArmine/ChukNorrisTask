@@ -1,3 +1,11 @@
 .footer-sec {
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: black;
+  min-height: 20vh;
+  .footer-content {
+  }
 }

@@ -3,6 +3,7 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    padding-bottom: 3rem;
     .joke-container {
       border: 1px solid var(--main);
       width: 80%;
@@ -10,7 +11,7 @@
       padding: 1rem;
       background-color: #f78e279e;
       .joke {
-        min-height: 8rem;
+        min-height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,11 +25,25 @@
           font-size: 14px;
         }
       }
+      .gif-cont {
+        position: relative;
+        top: 0.3rem;
+      }
+    }
+    .loading {
+      min-height: 17.1rem;
+      img {
+        max-height: 16rem;
+      }
+    }
+    .show-joke-cont {
+      margin-top: 2rem;
     }
   }
   .right-arrow {
     width: 2rem;
     position: relative;
     top: 0.4rem;
+    margin-left: 1rem;
   }
 }
