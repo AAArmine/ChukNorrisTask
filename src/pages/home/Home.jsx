@@ -48,7 +48,7 @@ export const Home = () => {
       <MainContainer>
         <Link to="/list">
           <CustomButton
-            text="Go to favorite jocks list"
+            text="Go to favorite list"
             addClass="link-button"
           />
           <img className="right-arrow" src={rightArrow} alt="Chuk Norris" />

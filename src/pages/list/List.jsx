@@ -8,8 +8,13 @@ import rightArrow from "../../assets/images/rightArrow.gif";
 import { BsChatQuote } from "react-icons/bs";
 
 export const List = () => {
-  const { list } = useContext(JokesContext);
-  console.log(list.length);
+  const { list, dispatch } = useContext(JokesContext);
+  const removeJoke =(elId) =>{
+     dispatch({
+       type: "REMOVE_JOKE",
+       joke: { id: elId },
+     });
+  }
   return (
     <section className="favorite-jokes">
       <MainContainer>
@@ -27,9 +32,8 @@ export const List = () => {
             {list.map((joke) => (
               <li>
                 <BsChatQuote size="2em" color="#f15a24" />
-
-                <div className="joke">joke value: {joke.value}</div>
-                <CustomButton text="remove" addClass="remove" />
+                <div className="joke">{joke.value}</div>
+                <CustomButton text="remove" addClass="remove" clickFunction={()=>removeJoke(joke.id)}/>
               </li>
             ))}
           </ul>

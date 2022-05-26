@@ -1,3 +1,4 @@
+@import "../../../assets/style/breakpoints/breakpoints.scss";
 .button-add-delete {
   font-family: "CrazyKrabs";
   background: linear-gradient(black, var(--secondary));
@@ -45,9 +46,15 @@
   background: transparent linear-gradient(#000000, #686868) no-repeat
     padding-box;
   width: 19rem;
+  @include small {
+    width: 15rem;
+  }
 }
 .button-add-delete.remove {
   border: 1px solid var(--main);
   background: transparent linear-gradient(#ff0202a8, var(--main));
   width: 13rem;
+  @include small {
+    width: 10rem;
+  }
 }

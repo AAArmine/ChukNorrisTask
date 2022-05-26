@@ -1,3 +1,4 @@
+@import "../../../../assets/style/breakpoints/breakpoints.scss";
 .wrapper {
   width: 70%;
   padding: 1rem;
@@ -6,4 +7,10 @@
   border-left: 1px solid rgba(128, 128, 128, 0.096);
   min-height: 55vh;
   margin: auto;
+  @include medium {
+    width: 85%;
+  }
+  @include small {
+    width: 100%;
+  }
 }

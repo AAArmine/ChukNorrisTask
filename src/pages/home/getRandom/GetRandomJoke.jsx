@@ -11,10 +11,23 @@ export const GetRandomJoke = ({ randomData }) => {
   const { dispatch, list } = useContext(JokesContext);
   const clickFunction = () => {
     if (!added) {
-      dispatch({
-        type: "ADD_TO_LIST",
-        joke: { id: randomData.id, value: randomData.value },
-      });
+      if (list.length < 10) {
+        dispatch({
+          type: "ADD_TO_LIST",
+          joke: { id: randomData.id, value: randomData.value },
+        });
+      } else {
+        const firstId = list[0].id;
+        dispatch({
+          type: "REMOVE_JOKE",
+          joke: { id: firstId },
+        });
+        dispatch({
+          type: "ADD_TO_LIST",
+          joke: { id: randomData.id, value: randomData.value },
+        });
+      }
+
       setAdded(true);
     } else {
       //code to delete item

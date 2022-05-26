@@ -1,3 +1,4 @@
+@import "../../assets/style/breakpoints/breakpoints.scss";
 .homepage-sec {
   .content {
     width: 100%;
@@ -9,7 +10,10 @@
       width: 80%;
       margin: auto;
       padding: 1rem;
-      background-color:  #f4a365bb;
+      background-color: #f4a365bb;
+      @include small {
+        width: 100%;
+      }
       .joke {
         min-height: 5rem;
         display: flex;
