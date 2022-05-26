@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from "react";
 import { BsChatQuote } from "react-icons/bs";
 import "../Home.scss";
 import chuckNorris from "../../../assets/images/chuckNorris.gif";
-import checked from "../../../assets/icons/checked.png";
 import completed from "../../../assets/icons/completed.png";
 import { CustomButton } from "../../../components/buttons/customButton/CustomButton";
 import { JokesContext } from "../../../App";
@@ -16,10 +15,13 @@ export const GetRandomJoke = ({ randomData }) => {
         type: "ADD_TO_LIST",
         joke: { id: randomData.id, value: randomData.value },
       });
-      console.log("list: ", list);
       setAdded(true);
     } else {
       //code to delete item
+      dispatch({
+        type: "REMOVE_JOKE",
+        joke: { id: randomData.id, value: randomData.value },
+      });
       setAdded(false);
     }
   };
