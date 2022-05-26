@@ -1,20 +1,20 @@
 .button-add-delete {
+  font-family: "CrazyKrabs";
   background: linear-gradient(black, var(--secondary));
   border: none;
   position: relative;
   padding: 0.5rem;
-  width: auto;
+  min-width: 13rem;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 800;
   cursor: pointer;
   border-radius: 30px;
-  box-shadow: 0 0 3px #454b4c;
+  letter-spacing: 1px;
+  box-shadow: 0 0 2px #080808;
   text-transform: uppercase;
   transition: box-shadow 0.5s ease;
-  width: 80%;
-  max-width: auto;
   border: 1px solid rgba(0, 0, 0, 0.753);
   border-bottom: 1px solid #454b4c;
   &:hover {
@@ -22,10 +22,9 @@
     border: 1px solid var(--bg);
   }
   &:hover .button-light {
-    top: 10px;
-    left: 8px;
-    width: 16px;
-    height: 7px;
+    top: 7px;
+    left: 7px;
+    height: 8px;
   }
   .button-light {
     position: absolute;
@@ -45,19 +44,10 @@
 .button-add-delete.link-button {
   background: transparent linear-gradient(#000000, #686868) no-repeat
     padding-box;
-  max-width: 17rem;
-  &:hover {
-    // max-width: 16.5rem;
-  }
+  width: 19rem;
 }
-
-.button-add-delete.inactive {
-  color: #8080809c;
-  background: transparent linear-gradient(255deg, #9b9b9bb4 0%, #9b9b9bb4 100%)
-    0% 0% no-repeat padding-box;
-  box-shadow: none;
-  opacity: 0.5;
-  .button-light {
-    display: none;
-  }
+.button-add-delete.remove {
+  border: 1px solid var(--main);
+  background: transparent linear-gradient(#ff0202a8, var(--main));
+  width: 13rem;
 }

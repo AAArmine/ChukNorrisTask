@@ -1,6 +1,7 @@
 .main-button {
   padding: 1rem 1.5rem;
   width: 80%;
+  font-family: "CrazyKrabs"!important;
   margin: auto;
   border: 2px solid var(--main);
   background: none;
@@ -9,8 +10,9 @@
   font-family: roboto-bold;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.8s;
+  font-size: 19px;
+  letter-spacing: 1px;
+  transition: 1.5s;
   position: relative;
   overflow: hidden;
   box-shadow: 4px 4px 6px var(--secondary);

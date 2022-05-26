@@ -37,7 +37,8 @@ export const Footer = () => {
           <span>React-Icons</span> <FaIcons size="1.3rem" />
         </div>
         <div className="mt-1 copyright">
-          Copyright <FaRegCopyright /> AA Armine {getYear()}
+          <FaRegCopyright />
+          <span>{getYear()} AA Armine, Yerevan Armenia</span>
         </div>
       </div>
     </section>

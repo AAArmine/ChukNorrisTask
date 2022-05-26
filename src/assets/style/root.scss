@@ -16,6 +16,10 @@
   font-family: roboto-italic;
   src: url("./fonts/Roboto/Roboto-Italic.ttf");
 }
+@font-face {
+  font-family: 'CrazyKrabs';
+  src: url('./fonts/crazy_krabs/Crazy_Krabs.otf');
+}
 @mixin vhAlignCenter {
   margin: 0;
   position: absolute;
@@ -50,10 +54,9 @@
 }
 
 body {
-  // color: var(--dark);
-  // ul {
-  //   list-style-type: none;
-  // }
+  ul {
+    list-style-type: none;
+  }
   // textarea:hover,
   // input:hover,
   // textarea:active,

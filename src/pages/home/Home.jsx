@@ -57,7 +57,7 @@ export const Home = () => {
         <div className="mt-2">
           <div className="content">
             {loadingRandomJoke === "success" ? (
-              <GetRandomJoke randomData={randomData} />
+              <GetRandomJoke randomData={randomData} singleJoke={true} />
             ) : (
               ""
             )}
@@ -76,7 +76,10 @@ export const Home = () => {
             </div>
             <div className="mt-2">
               {loadingStartJoke === "success" ? (
-                <GetRandomJoke randomData={randomDataWithInterval} />
+                <GetRandomJoke
+                  randomData={randomDataWithInterval}
+                  singleJoke={false}
+                />
               ) : (
                 ""
               )}
