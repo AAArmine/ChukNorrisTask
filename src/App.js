@@ -13,13 +13,14 @@ function App() {
   const data = localStorage.getItem("list");
   const storageData = data ? JSON.parse(data) : [];
   const [list, dispatch] = useReducer(listReducer, storageData);
+  const name = "Vishvas";
   useEffect(() => {
     localStorage.setItem("list", JSON.stringify(list));
   }, [list]);
   return (
     <div className="App">
       <Header />
-      <JokesContext.Provider value={{ list, dispatch }}>
+      <JokesContext.Provider value={{ list, dispatch, name }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="list" element={<List />} />

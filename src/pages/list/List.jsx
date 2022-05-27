@@ -26,8 +26,19 @@ export const List = () => {
     <section className="favorite-jokes">
       <MainContainer>
         <Link to="/">
+          <img
+            className="right-arrow"
+            src={rightArrow}
+            alt="Chuk Norris"
+            style={{
+              transform: "rotate(180deg)",
+              position: "relative",
+              top: "10px",
+              marginLeft: "0",
+              marginRight: "15px",
+            }}
+          />
           <CustomButton text="Go Back" addClass="link-button" />
-          <img className="right-arrow" src={rightArrow} alt="Chuk Norris" />
         </Link>
         <div className="favorites-cont">
           {list.length > 0 ? (
