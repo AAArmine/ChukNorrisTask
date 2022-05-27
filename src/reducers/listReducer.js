@@ -6,9 +6,12 @@ export const listReducer = (state, action) => {
         {
           id: action.joke.id,
           value: action.joke.value,
-        }];
+        },
+      ];
     case "REMOVE_JOKE":
       return state.filter((joke) => joke.id !== action.joke.id);
+    case "CLEAR_LIST":
+      return [];
     default:
       return state;
   }
